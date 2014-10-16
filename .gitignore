@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Colorcode"
+    tools:context="com.example.med.Login" >
+
+    <ImageView
+        android:id="@+id/emailid"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignBottom="@+id/email"
+        android:layout_alignLeft="@+id/email"
+        android:src="@drawable/email_g" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_alignLeft="@+id/pass"
+        android:layout_marginBottom="16dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="@string/email"
+        android:paddingLeft="@dimen/padleft"
+        android:singleLine="true"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/textsize" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="260dp"
+        android:layout_height="2dip"
+        android:layout_alignLeft="@+id/email"
+        android:layout_below="@+id/emailid"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:id="@+id/pass"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignBottom="@+id/pass"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="31dp"
+        android:src="@drawable/password1" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login"
+        android:layout_alignLeft="@+id/pass"
+        android:layout_marginBottom="16dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="@string/password"
+        android:paddingLeft="@dimen/padleft"
+        android:singleLine="true"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/textsize" />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_above="@+id/twitter"
+        android:layout_centerHorizontal="true"
+        android:editable="false"
+        android:gravity="center"
+        android:text="@string/signin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize" 
+        android:clickable="true"
+        />
+
+    <ImageButton
+        android:id="@+id/facebook"
+        android:layout_width="130dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_above="@+id/dont_acc"
+        android:layout_alignLeft="@+id/emailid"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round"
+        android:src="@drawable/fb" 
+        android:alpha="0.8"
+        />
+
+    <ImageButton
+        android:id="@+id/twitter"
+        android:layout_width="130dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignTop="@+id/facebook"
+        android:layout_toRightOf="@+id/facebook"
+        android:background="@drawable/roundright"
+        android:src="@drawable/twitter"
+        android:alpha="0.8"
+         />
+
+    <EditText
+        android:id="@+id/dont_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/emailid"
+        android:background="@color/Colorcode"
+        android:clickable="true"
+        android:text="@string/dont_acc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize" 
+        android:editable="false">
+    </EditText>
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/androidicon"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Logo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size" />
+
+    <ImageView
+        android:id="@+id/androidicon"
+        android:layout_width="124dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/big_logo" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_above="@+id/signin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshape"
+        android:text="@string/login"
+        android:textColor="@color/white" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="260dp"
+        android:layout_height="2dip"
+        android:layout_alignLeft="@+id/password"
+        android:layout_below="@+id/pass"
+        android:background="#ffffff" />
+
+</RelativeLayout>
