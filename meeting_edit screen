@@ -1,0 +1,187 @@
+<RelativeLayout 
+
+xmlns:android="http://schemas.android.com/apk/res/an
+
+droid"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+
+android:paddingBottom="@dimen/activity_vertical_m
+
+argin"
+    tools:context=".Meeting_edit" >
+    
+      <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#7ecccb"
+         >
+
+        <ImageButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7ecccb"
+        android:src="@drawable/home"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+         />
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/right"
+            android:layout_toRightOf="@+id/home"
+            android:gravity="center"
+            android:text="@string/doctor_name"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+        
+    </RelativeLayout>
+    
+      
+       
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/docname"
+        android:layout_marginTop="28dp"
+        android:text="@string/dates"
+        android:textSize="@dimen/size"
+        android:textColor="@color/colr"
+         android:layout_marginLeft="@dimen/left"
+        android:textAppearance="?
+
+android:attr/textAppearanceMedium" />
+
+    <View 
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="170dp"
+        android:background="#7ecccb"
+        />
+
+   
+
+    <TextView
+        android:id="@+id/alarm_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="28dp"
+        android:text="@string/almtime"
+        android:textSize="@dimen/size"
+        android:textColor="@color/colr"
+         android:layout_marginLeft="@dimen/left"
+        android:textAppearance="?
+
+android:attr/textAppearanceMedium" />
+    <View 
+        android:id="@+id/veiw4"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="270dp"
+        android:background="#7ecccb"
+        />
+    <View 
+        android:id="@+id/veiw1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="120dp"
+        android:background="#7ecccb"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="28dp"
+        android:text="@string/time"
+        android:textSize="@dimen/size"
+        android:textColor="@color/colr"
+         android:layout_marginLeft="@dimen/left"
+        android:textAppearance="?
+
+android:attr/textAppearanceMedium" />
+
+        <View 
+        android:id="@+id/veiw2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="220dp"
+        android:background="#7ecccb"
+        />
+   
+
+    <TextView
+        android:id="@+id/docname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="43dp"
+        android:text="@string/doctor_name"
+        android:textColor="@color/colr"
+        android:textAppearance="?
+
+android:attr/textAppearanceMedium"
+        android:textSize="@dimen/size"
+        android:layout_marginLeft="@dimen/left"
+         />
+    
+     <Button
+        android:layout_width="230dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/button"
+        android:text="@string/delete"
+        android:textColor="@color/colr" />
+
+     <TextView
+         android:id="@+id/fdate"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/date"
+         android:layout_alignBottom="@+id/date"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="28dp"
+         android:text="21/8/14"
+          android:textSize="@dimen/size" 
+         android:textColor="@color/colr" />
+
+     <TextView
+         android:id="@+id/ftime"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/time"
+         android:layout_alignBottom="@+id/time"
+         android:layout_alignLeft="@+id/fdate"
+         android:text="5:00 a.m"
+          android:textSize="@dimen/size" 
+         android:textColor="@color/colr" />
+
+     <TextView
+         android:id="@+id/falarm"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/ftime"
+         android:layout_centerVertical="true"
+         android:text="4:00 a.m"
+         android:textSize="@dimen/size" 
+         android:textColor="@color/colr"/>
+
+</RelativeLayout>
