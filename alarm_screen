@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alarm_screen" >
+
+    <RelativeLayout
+        android:id="@+id/alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#7ecccb"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="@dimen/left"
+            android:layout_marginRight="@dimen/right"
+            android:gravity="center"
+            android:text="Alarm"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/alarm1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:layout_centerVertical="true"
+        android:editable="false"
+        android:ems="10"
+        android:text="@string/micro"
+        android:textColor="#7ecccb"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        
+         />
+    
+     <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/alarm1"
+            android:layout_marginTop="8dp"
+            
+            />
+
+    <TextView
+        android:id="@+id/alarm2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/alarm1"
+         android:layout_marginTop="20dp"
+          android:editable="false"
+        android:ems="10"
+        android:text="@string/wake"
+        android:textColor="#7ecccb"
+        android:textSize="20sp"
+         android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+         />
+    
+     <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/alarm2"
+            android:layout_marginTop="8dp"
+            
+            />
+
+    <TextView
+        android:id="@+id/alarm3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/alarm2"
+        android:layout_marginTop="20dp"
+        android:editable="false"
+        android:ems="10"
+        android:text="@string/gaga"
+        android:textColor="#7ecccb"
+        android:textSize="20sp"
+         android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        
+         />
+
+     <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/alarm3"
+            android:layout_marginTop="6dp"
+            
+            />
+    
+    <TextView
+        android:id="@+id/alarm4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/alarm3"
+       android:layout_marginTop="20dp"
+        android:editable="false"
+        android:ems="10"
+        android:text="@string/ranger"
+        android:textColor="#7ecccb"
+        android:textSize="20sp"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right" />
+    
+     <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/alarm4"
+            android:layout_marginTop="8dp"
+            
+            />
+
+    <TextView
+        android:id="@+id/alarm5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/alarm4"
+        android:editable="false"
+        android:ems="10"
+        android:text="@string/bell"
+        android:textColor="#7ecccb"
+        android:textSize="20sp"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right" />
+    
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/alarm5"
+            android:layout_marginTop="6dp"
+            
+            />
+
+    <TextView
+        
+        android:id="@+id/alarm6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+         android:layout_below="@+id/alarm1"
+        android:editable="false"
+        android:ems="10"
+        android:text="@string/marko"
+        android:textColor="#7ecccb"
+        android:textSize="20sp"
+         android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right" />
+    
+     <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/alarm6"
+            android:layout_marginTop="8dp"
+            
+            />
+    
+    
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="65dp" >
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="110dp" >
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="155dp" >
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="200dp" >
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="240dp" >
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="280dp" >
+    </CheckBox>
+    
+    <ImageView 
+        
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/home"
+        android:layout_marginLeft="20dp"
+        
+        />
+
+</RelativeLayout>
