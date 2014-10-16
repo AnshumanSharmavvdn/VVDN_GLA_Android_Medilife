@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.med.Aboutus" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7ecccb"
+        android:orientation="horizontal" >
+
+        
+        <ImageButton 
+        android:id="@+id/home"
+        android:src="@drawable/home"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+            />
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/about"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_textsize" />
+        
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/logo_g" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="260dp"
+        android:layout_height="1dip"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="@dimen/marginleft"
+        android:layout_marginTop="@dimen/margintop"
+        android:background="#7ecccb" />
+    
+    <TextView 
+        android:textSize="@dimen/textsize"
+        android:text="@string/prevent"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="@dimen/margintop"
+        android:layout_marginLeft="@dimen/textmarginl"
+        android:textColor="@color/Colorcode"
+        />
+
+</RelativeLayout>
