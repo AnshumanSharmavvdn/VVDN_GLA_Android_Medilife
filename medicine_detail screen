@@ -1,0 +1,407 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Medicine_details" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#7ecccb"
+        android:gravity="center" >
+
+        <TextView
+            
+            android:contentDescription="@string/home2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="@dimen/left"
+            android:layout_marginRight="@dimen/right"
+            android:text="@string/med_det"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        
+        
+        android:id="@+id/no_med"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/no_med"
+        android:textColorHint="#7ecccb"
+        android:textSize="20sp" >
+    </TextView>
+    
+     <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/no_med"
+            android:layout_marginTop="6dp"
+            
+            />
+
+    <TextView
+        android:id="@+id/entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/no_med"
+        android:layout_below="@+id/no_med"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/med_entry"
+        android:textColorHint="#7ecccb"
+        android:textSize="20sp" />
+    
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/entry"
+            android:layout_marginTop="10dp"
+            
+            />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/no_med"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="@string/date"
+        android:textColorHint="#7ecccb"
+        android:textSize="20sp" />
+    
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="15dp"
+            
+            />
+
+    <TextView
+        android:id="@+id/no_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/no_med"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:hint="@string/days"
+        android:textColorHint="#7ecccb"
+        android:textSize="20sp" />
+    
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/no_days"
+            android:layout_marginTop="16dp"
+            
+            />
+
+    <TextView
+        android:id="@+id/quant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/no_med"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:hint="@string/quantity"
+        android:textColorHint="#7ecccb"
+        android:textSize="20sp" />
+    
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/quant"
+            android:layout_marginTop="14dp"
+            
+            />
+
+    <TextView
+        android:id="@+id/alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/no_med"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:layout_marginTop="210dp"
+        android:ems="10"
+        android:hint="@string/alarm_time"
+        android:textColorHint="#7ecccb"
+        android:textSize="20sp" />
+    
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/alarm"
+            android:layout_marginTop="15dp"
+            
+            />
+
+    <Button
+        android:layout_width="230dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/button"
+        android:text="@string/done"
+        android:textColor="#7ecccb" />
+
+    <ImageView
+         android:contentDescription="@string/home"
+         android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp" />
+    
+     <ImageView
+         android:contentDescription="@string/home1"
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plus"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="280dp" />
+    
+
+</RelativeLayout><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Medicine_details" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#7ecccb"
+        android:gravity="center" >
+
+        <TextView
+            
+            android:contentDescription="@string/home2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="@dimen/left"
+            android:layout_marginRight="@dimen/right"
+            android:text="@string/med_det"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        
+        
+        android:id="@+id/no_med"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/no_med"
+        android:textColorHint="#7ecccb"
+        android:textSize="20sp" >
+    </TextView>
+    
+     <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/no_med"
+            android:layout_marginTop="6dp"
+            
+            />
+
+    <TextView
+        android:id="@+id/entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/no_med"
+        android:layout_below="@+id/no_med"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/med_entry"
+        android:textColorHint="#7ecccb"
+        android:textSize="20sp" />
+    
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/entry"
+            android:layout_marginTop="10dp"
+            
+            />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/no_med"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="@string/date"
+        android:textColorHint="#7ecccb"
+        android:textSize="20sp" />
+    
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="15dp"
+            
+            />
+
+    <TextView
+        android:id="@+id/no_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/no_med"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:hint="@string/days"
+        android:textColorHint="#7ecccb"
+        android:textSize="20sp" />
+    
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/no_days"
+            android:layout_marginTop="16dp"
+            
+            />
+
+    <TextView
+        android:id="@+id/quant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/no_med"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:hint="@string/quantity"
+        android:textColorHint="#7ecccb"
+        android:textSize="20sp" />
+    
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/quant"
+            android:layout_marginTop="14dp"
+            
+            />
+
+    <TextView
+        android:id="@+id/alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/no_med"
+        android:layout_marginLeft="@dimen/left"
+        android:layout_marginRight="@dimen/right"
+        android:layout_marginTop="210dp"
+        android:ems="10"
+        android:hint="@string/alarm_time"
+        android:textColorHint="#7ecccb"
+        android:textSize="20sp" />
+    
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#7ecccb" 
+            android:padding="10dp"
+            android:layout_below="@+id/alarm"
+            android:layout_marginTop="15dp"
+            
+            />
+
+    <Button
+        android:layout_width="230dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/button"
+        android:text="@string/done"
+        android:textColor="#7ecccb" />
+
+    <ImageView
+         android:contentDescription="@string/home"
+         android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp" />
+    
+     <ImageView
+         android:contentDescription="@string/home1"
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plus"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="280dp" />
+    
+
+</RelativeLayout>
