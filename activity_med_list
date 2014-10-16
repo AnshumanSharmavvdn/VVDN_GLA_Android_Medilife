@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.med.Med_list" >
+
+    <LinearLayout
+        android:id="@+id/header1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7ecccb"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#7ecccb"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/med_list"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/med_list"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_textsize" />
+
+        <ImageButton
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#7ecccb"
+            android:src="@drawable/plus" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/md1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header1"
+        android:text="@string/medname1"
+        android:textSize="@dimen/textsize" 
+        android:padding="6dp"
+        />
+
+    <View
+        android:id="@+id/views1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/md1"
+        android:background="#7ecccb" />
+
+    <TextView
+        android:id="@+id/md2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/md1"
+        android:text="@string/medname2"
+        android:textSize="@dimen/textsize" 
+        android:padding="6dp"
+        />
+    
+    <View
+        android:id="@+id/views2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/md2"
+        android:background="#7ecccb" />
+
+    <TextView
+        android:id="@+id/md3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/md2"
+        android:text="@string/medname3"
+        android:textSize="@dimen/textsize" 
+        android:padding="6dp"
+        />
+
+    <View
+        android:id="@+id/views3"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/md3"
+        android:background="#7ecccb" />
+    <TextView
+        android:id="@+id/md4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/md3"
+        android:text="@string/medname4"
+        android:textSize="@dimen/textsize" 
+        android:padding="6dp"
+        />
+
+    <View
+        android:id="@+id/views4"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/md4"
+        android:background="#7ecccb" />
+    <TextView
+        android:id="@+id/md5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/md4"
+        android:text="@string/medname5"
+        android:textSize="@dimen/textsize" 
+        android:padding="6dp"
+        />
+
+    <View
+        android:id="@+id/views5"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/md5"
+        android:background="#7ecccb" />
+</RelativeLayout>
